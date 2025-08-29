@@ -1,11 +1,24 @@
 import { useState } from "react";
 import "./App.css";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Rightbar from "./components/Rightbar/Rightbar";
 
 function App() {
   return (
-    <>
-      <p>bahaa</p>
-    </>
+    <div className="app">
+      {/* Sidebar */}
+      <div>
+        <Sidebar />
+      </div>
+
+      {/* Profile */}
+      <div>profile</div>
+
+      {/* Trends */}
+      <div>
+        <Rightbar />
+      </div>
+    </div>
   );
 }
 
