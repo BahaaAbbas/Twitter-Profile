@@ -5,7 +5,7 @@
   gap: 0.75rem;
   padding: 0.5rem;
   cursor: pointer;
-  border-radius: 9999px;
+  border-radius: 50px;
   transition: background-color 0.2s;
   position: relative;
 }
@@ -40,6 +40,6 @@
 }
 
 .more {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
 }
