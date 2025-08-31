@@ -7,9 +7,11 @@ const trends = [
     title: "#VALORANTChampions",
     posts: "27.9K",
   },
-  { category: "Trending", title: "Mako", posts: "14.1K" },
+  { category: "Trending", title: "محمد", posts: "14.1K" },
   { category: "Gaming · Trending", title: "fnatic", posts: "8,748" },
 ];
+
+const isArabic = (text) => /[\u0600-\u06FF]/.test(text);
 
 const Trends = () => {
   return (
@@ -19,7 +21,14 @@ const Trends = () => {
         {trends.map((trend, index) => (
           <li key={index} className={styles.trend}>
             <span className={styles.category}>{trend.category}</span>
-            <strong>{trend.title}</strong>
+            <strong
+              style={{
+                display: "block",
+                textAlign: isArabic(trend.title) ? "right" : "left",
+              }}
+            >
+              {trend.title}
+            </strong>
             <span className={styles.posts}>{trend.posts} posts</span>
           </li>
         ))}

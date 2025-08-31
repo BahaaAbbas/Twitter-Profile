@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Rightbar from "./components/Rightbar/Rightbar";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       </div>
 
       {/* Profile */}
-      <div>profile</div>
+      <div>
+        <Profile />
+      </div>
 
       {/* Trends */}
       <div>

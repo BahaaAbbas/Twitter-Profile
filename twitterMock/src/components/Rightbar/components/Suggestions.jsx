@@ -1,24 +1,23 @@
 import React from "react";
 import styles from "../styles/Suggestions.module.css";
+import tailwind from "../../../assets/tailwind.png";
+import typescript from "../../../assets/typescript.png";
+import freecode from "../../../assets/freecode.jpg";
 
 const suggestions = [
-  { name: "Tailwind CSS", handle: "@tailwindcss" },
-  { name: "TypeScript", handle: "@typescript" },
-  { name: "freeCodeCamp.org", handle: "@freeCodeCamp" },
+  { name: "Tailwind CSS", handle: "@tailwindcss", src: tailwind },
+  { name: "TypeScript", handle: "@typescript", src: typescript },
+  { name: "freeCodeCamp.org", handle: "@freeCodeCamp", src: freecode },
 ];
 
 const Suggestions = () => {
   return (
     <div className={styles.card}>
-      <h3>Who to follow</h3>
+      <h3>You might like</h3>
       <ul>
         {suggestions.map((user, index) => (
           <li key={index} className={styles.user}>
-            <img
-              src={`https://via.placeholder.com/40?text=${user.name[0]}`}
-              alt={user.name}
-              className={styles.avatar}
-            />
+            <img src={user.src} alt={user.name} className={styles.avatar} />
             <div className={styles.info}>
               <strong>{user.name}</strong>
               <span>{user.handle}</span>
