@@ -1,15 +1,6 @@
 import React from "react";
 import styles from "../styles/Trends.module.css";
-
-const trends = [
-  {
-    category: "Gaming · Trending",
-    title: "#VALORANTChampions",
-    posts: "27.9K",
-  },
-  { category: "Trending", title: "محمد", posts: "14.1K" },
-  { category: "Gaming · Trending", title: "fnatic", posts: "8,748" },
-];
+import { trends } from "../utils/RightbarConstant";
 
 const isArabic = (text) => /[\u0600-\u06FF]/.test(text);
 

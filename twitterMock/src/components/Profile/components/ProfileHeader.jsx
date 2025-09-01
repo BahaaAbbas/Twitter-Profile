@@ -1,11 +1,10 @@
 import React from "react";
-import styles from "../styles/UpperSection.module.css";
+import styles from "../styles/ProfileHeader.module.css";
 import bannerImage from "../../../assets/react-avatar.jpg";
 import avatarImage from "../../../assets/react-avatar.jpg";
+import { tabs } from "../utils/ProfileConstant";
 
-const UpperSection = () => {
-  const tabs = ["Posts", "Replies", "Media", "Likes"];
-
+const ProfileHeader = () => {
   return (
     <div className={styles.upperSection}>
       {/* Header */}
@@ -103,4 +102,4 @@ const UpperSection = () => {
   );
 };
 
-export default UpperSection;
+export default ProfileHeader;

@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../styles/MiddleSection.module.css";
+import styles from "../styles/ProfileTabs.module.css";
 import person from "../../../assets/person.png";
 
-const MiddleSection = () => {
+const ProfileTabs = () => {
   return (
     <div className={styles.middleSection}>
       <div className={styles.repost}>
@@ -54,4 +54,4 @@ const MiddleSection = () => {
   );
 };
 
-export default MiddleSection;
+export default ProfileTabs;

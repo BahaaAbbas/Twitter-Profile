@@ -1,14 +1,6 @@
 import React from "react";
 import styles from "../styles/Suggestions.module.css";
-import tailwind from "../../../assets/tailwind.png";
-import typescript from "../../../assets/typescript.png";
-import freecode from "../../../assets/freecode.jpg";
-
-const suggestions = [
-  { name: "Tailwind CSS", handle: "@tailwindcss", src: tailwind },
-  { name: "TypeScript", handle: "@typescript", src: typescript },
-  { name: "freeCodeCamp.org", handle: "@freeCodeCamp", src: freecode },
-];
+import { suggestions } from "../utils/RightbarConstant";
 
 const Suggestions = () => {
   return (

@@ -1,15 +1,6 @@
 import React from "react";
 import styles from "../styles/Legal.module.css";
-
-const legalLinks = [
-  "Terms of Service",
-  "Privacy Policy",
-  "Cookie Policy",
-  "Accessibility",
-  "Ads info",
-  "More...",
-  "© 2025 X Corp.",
-];
+import { legalLinks } from "../utils/RightbarConstant";
 
 const Legal = () => {
   return (
