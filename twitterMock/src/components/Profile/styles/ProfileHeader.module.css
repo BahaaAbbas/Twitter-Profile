@@ -1,0 +1,262 @@
+.upperSection {
+  color: #fafafa;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(21, 22, 23, 0.8);
+  backdrop-filter: blur(0.75rem);
+  border-bottom: 1px solid #29292b;
+  z-index: 10;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  gap: 1rem;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.backButton:hover {
+  background: rgba(250, 250, 250, 0.03);
+}
+
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+  color: #fafafa;
+}
+
+.postCount {
+  font-size: 0.8125rem;
+  color: #a6a7ab;
+}
+
+.banner {
+  width: 100%;
+  height: 12.5rem;
+  overflow: hidden;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileInfo {
+  padding: 0.75rem 1rem 0;
+}
+
+.avatarSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.25rem;
+}
+
+.avatarContainer {
+  margin-top: -4.18rem;
+  border: 4px solid #151617;
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 50%;
+  border: 1px solid #29292b;
+  background: none;
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.iconButton:hover {
+  background: rgba(250, 250, 250, 0.03);
+}
+
+.followButton {
+  padding: 0.375rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #29292b;
+  background: none;
+  color: #fafafa;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.followButton:hover {
+  background: rgba(250, 250, 250, 0.03);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.displayName {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+  color: #fafafa;
+}
+
+.username {
+  font-size: 0.9375rem;
+  color: #a6a7ab;
+}
+
+.bio {
+  font-size: 0.9375rem;
+  margin: 0.75rem 0;
+  color: #fafafa;
+}
+
+.metadata {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.metadataItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #a6a7ab;
+  font-size: 0.9375rem;
+}
+
+.link {
+  color: #66c0ff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.profileStats {
+  padding: 0 0 1rem;
+}
+
+.statsContainer {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.stat {
+  display: flex;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.stat:hover .statNumber {
+  text-decoration: underline;
+}
+
+.statNumber {
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.statLabel {
+  color: #a6a7ab;
+  font-size: 0.9375rem;
+}
+
+.followedBy {
+  color: #a6a7ab;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.followedBy:hover {
+  text-decoration: underline;
+}
+
+.profileTabs {
+  border-bottom: 1px solid #29292b;
+}
+
+.tabsContainer {
+  display: flex;
+}
+
+.tab {
+  flex: 1;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background: rgba(250, 250, 250, 0.03);
+}
+
+.tabText {
+  color: #a6a7ab;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.activeTab .tabText {
+  color: #fafafa;
+  font-weight: 700;
+}
+
+.activeIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3.5rem;
+  height: 0.25rem;
+  background: #0096ff;
+  border-radius: 2px;
+}

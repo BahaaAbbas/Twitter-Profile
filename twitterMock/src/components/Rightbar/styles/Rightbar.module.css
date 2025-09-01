@@ -1,0 +1,10 @@
+.rightbar {
+  flex: 0.3;
+  padding: 1rem 2rem 1rem 0rem;
+  color: #d9d9d9;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  position: fixed;
+}

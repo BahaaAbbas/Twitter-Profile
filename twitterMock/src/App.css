@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #000000;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*  App.jsx */
+.app {
+  width: 100vw;
+  display: flex;
+  color: white;
+}
+
+.app > div:nth-child(1) {
+  flex: 0.18;
+}
+
+.app > div:nth-child(2) {
+  flex: 0.56;
+}
+
+.app > div:nth-child(3) {
+  flex: 0.2;
+}
